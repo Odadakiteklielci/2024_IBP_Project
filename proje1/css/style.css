@@ -1,0 +1,374 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between; /* Logo ve menüyü bölünmüş olarak hizalamak için */
+    align-items: center; /* Dikeyde merkezlemek için */
+    height: 80px;
+    padding: 0 20px;
+}
+
+#logo {
+    display: flex; /* Logo ve metni yan yana hizalamak için */
+    align-items: center; /* Dikeyde merkezlemek için */
+}
+
+.logo-text {
+    font-size: 30px;
+    color: #003666;
+    margin-left: 10px; /* Logo ile metin arasındaki boşluğu ayarlamak için */
+    font-weight: bold; /* Metin kalınlığını ayarlamak için */
+    line-height: 1; /* Metin yüksekliğini ayarlamak için */
+}
+
+nav a {
+    text-decoration: none;
+    color: #003666;
+    display: inline-block;
+    margin-left: 25px;
+    position: relative;
+}
+
+nav a::after {
+    content: ''; /* Öğenin içeriğini temizleme */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent; /* Başlangıçta görünmez */
+    transition: background-color 0.3s; /* Geçiş efekti için */
+}
+
+nav a:hover::after {
+    background-color: #003666; /* Hover durumunda alt çizgi rengi */
+}
+
+
+nav a:visited{
+    text-decoration:none;
+    margin-right: 25px;
+    color: #003666;
+}
+
+.ikon{
+    margin-right: 7px;
+    font-size: 16px;
+}
+
+
+#anasayfa{
+    background-color: gray;
+    height: 600px;
+    background-image: url("../Banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#black{
+    height: 600px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#icerik{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-64%,-50%);
+    color:cornsilk;
+    font-size: 20px;
+}
+
+
+#Hakkimizda{
+    background-color: #f8f9fa;
+    padding: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+
+}
+
+h3{
+    font-size: 55px;
+    color: #003666;
+    text-shadow: 0 1px 1px black;
+    font-weight: 600;
+}
+
+
+.container{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+
+#sol{
+    float: left;
+    border-right: 3px solid #445c6e;
+    font-size: 30px;
+    width: 400px;
+    color: #445c6e;
+
+}
+
+#h5sol{
+    line-height: 1.6;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+#h5sol,#sag{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+
+span{
+    font-size: 50px;
+    margin-right: 7px;
+    line-height: 42px;
+    color: #003666;
+    font-weight: 600;
+    float: left;
+}
+
+#sag{
+    float:right;
+    width: 750px;
+    color: #999999;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.mt100{
+    margin-top: 100px;
+}
+
+#pson{
+    color: #999;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 30px;
+    font-weight: 100;
+}
+
+#turlar{
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+    height: 750px;
+    margin-bottom: 10px;
+}
+
+.card{
+    width: 320px;
+    height: 450px;
+    border: 1px solid #ddd;
+    padding:0;
+    display: inline-block;
+}
+
+.cardh{
+    font-size: 15px;
+    color: #003666;
+}
+
+.cardp{
+    color: #888;
+}
+.card:hover{
+    border: 2px solid black;
+}
+
+.card img {
+    width: 320px; /* Resmin genişliği */
+    height: 200px; /* Resmin yüksekliği */
+    object-fit: cover; /* Resmi genişlik ve yükseklik sınırlarına sığacak şekilde doldurur */
+}
+
+#Ekip{
+    background-color: #003666;
+    padding: 50px;
+    height: 850px;
+    text-align: center;
+    
+}
+
+#ekiph3{
+    color: white;
+}
+
+.sutun-sol-sag{
+    width: 385px;
+    float:left;
+    padding: 50px;
+}
+
+.oval{
+    border-radius: 200%;
+}
+
+.ekipisim{
+    color:white;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.ekipp{
+    color: #888;
+    font-size: 20px;
+}
+
+.social{
+    border: 1px solid white;
+    padding: 10px;
+    width: 50px;
+    border-radius: 5px;
+    margin: 5px 10px;
+}
+
+.social:hover{
+    background-color: #888;
+}
+
+.sutun{
+    width: 385px;
+    float:left;
+    padding: 10px;
+}  
+
+
+#iletisim{
+    background: url("../img/iletiism.jpeg");
+    background-size: cover;
+    padding: 60px;
+    height: auto;
+    text-align: center;
+}
+
+#iletisimh{
+    color:peru;
+}
+
+#seffaf{
+    background: rgba(255, 255,255, 0.47);
+    padding: 30px 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    height: 550px;
+}
+
+#formgrup{
+    width: 700px;
+    float: left;
+    height: 500px;
+    text-align: left;
+}
+
+#solform{
+    width: 50%;
+    float: left;
+    padding-right: 5px;
+}
+
+#sagform{
+    width: 50%;
+    float: right;
+    padding-left: 5px;
+}
+
+
+.form-control{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color:#495057;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+
+textarea{
+    font-family: arial;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    background-color:darkgrey;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#mesaj{
+    height: 250px;
+}
+
+#adres{
+    width: 450px;
+    float: right;
+    padding: 30px;
+    height: 500px;
+    text-align: left;
+}
+
+#adresbaslik{
+    font-size: 30px;
+    color:black;
+}
+
+
+#adresp{
+   
+    color:black;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+#copyright{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+#up{
+    color:white;;
+    font-size: 100px;
+    padding: 7px 12px;
+    margin-top: 20px;
+}
